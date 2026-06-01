@@ -347,7 +347,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
         .pulse-pick { color: var(--neon-cyan); }
         .pulse-change.up { color: #4ade80; }
 
-        /* ========== СБОРКИ - ПИЗДАТАЯ ВЕРСИЯ ========== */
+        /* СБОРКА */
         .builds-header {
             text-align: center;
             margin-bottom: 40px;
@@ -487,7 +487,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
             box-shadow: 0 0 15px var(--neon-cyan);
         }
 
-        /* ========== ГАЙДЫ - ПИЗДАТАЯ ВЕРСИЯ ========== */
+        /* ГАЙД */
         .guides-header {
             text-align: center;
             margin-bottom: 40px;
@@ -597,7 +597,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
             transform: translateY(-2px);
         }
 
-        /* ========== НОВОСТИ - ПИЗДАТАЯ ВЕРСИЯ ========== */
+        /* НОВОСТИ */
         .news-header {
             text-align: center;
             margin-bottom: 40px;
@@ -848,7 +848,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
             .welcome-card { padding: 30px 20px; }
             .welcome-title { font-size: 1.8rem; }
         }
-                /* ========== КИБЕРПАНК ГЛАВНАЯ (СПОКОЙНАЯ ВЕРСИЯ) ========== */
+                /* ========== ГЛАВНАЯ ========== */
         .cyber-welcome {
             position: relative;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0a0a1a 100%);
@@ -1239,7 +1239,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
             color: #a0a0c0;
             letter-spacing: 1px;
         }
-                /* ========== ГАЙДЫ - УЛЬТРА ПИЗДАТАЯ ВЕРСИЯ ========== */
+                /* ГАЙДЫ */
         .guides-header {
             text-align: center;
             margin-bottom: 50px;
@@ -1538,7 +1538,7 @@ $avatarLetter = $username ? strtoupper(substr($username, 0, 1)) : '?';
                 gap: 15px;
             }
         }
-                /* ========== НОВОСТИ  ========== */
+                /!-- НОВОСТИ --/
         .news-header-ultra {
             text-align: center;
             margin-bottom: 50px;
@@ -1953,7 +1953,7 @@ for (let i = 0; i < 100; i++) {
     <i class="fas fa-arrow-right item-arrow"></i>
 </a>
 <?php
-// Проверяем, является ли пользователь админом
+// Проверка является ли пользователь админом
 $is_admin = false;
 if ($username) {
     try {
@@ -2021,7 +2021,7 @@ if ($username) {
 <!-- КОНТЕЙНЕР -->
 <div class="container">
     
-<!-- ГЛАВНАЯ - КИБЕРПАНК ВЕРСИЯ -->
+<* ГЛАВНАЯ *>
 <div id="home-page" class="content-section active">
     <!-- Приветственный баннер с эффектом матрицы -->
     <div class="cyber-welcome">
@@ -2197,10 +2197,10 @@ if ($username) {
         </div>
     </div>
     
-    <!-- СБОРКИ - КРАСИВАЯ ВЕРСИЯ -->
+    <!-- СБОРКИ -->
     <div id="builds-page" class="content-section">
         <style>
-            /* ========== КИБЕРПАНК СБОРКИ - ULTRA EDITION ========== */
+            /* СБОРКИ */
             .builds-hero {
                 text-align: center;
                 margin-bottom: 50px;
@@ -2684,14 +2684,14 @@ if ($username) {
                 .builds-main-title { font-size: 1.8rem; }
                 .builds-main-title::before, .builds-main-title::after { display: none; }
             }
-         /* ========== УЛЬТРА-БЕЛЫЙ РЕЖИМ ДЛЯ МАКСИМАЛЬНОЙ ВИДИМОСТИ ========== */
+         /* БЕЛЫЙ РЕЖИМ */
         
-        /* ГЛОБАЛЬНО - ВЕСЬ ТЕКСТ БЕЛЫЙ */
+        /* ТЕКСТ БЕЛЫЙ */
         body, html, * {
             color-scheme: light dark;
         }
         
-        /* Основной текст */
+        / Основной текст /
         body, p, div, span, li, .text, .content, 
         .hero-subtitle, .subtitle, .builds-subtitle,
         .news-text, .guide-list li, .pulse-stats,
@@ -2699,7 +2699,7 @@ if ($username) {
             color: #ffffff !important;
         }
         
-        /* ВСЕ ЗАГОЛОВКИ БЕЛЫЕ */
+        /* ЗАГОЛОВКИ БЕЛЫЕ */
         h1, h2, h3, h4, h5, h6, 
         .hero-title, .welcome-title, .section-title-cyber h2,
         .builds-title, .guides-title, .news-title-main,
@@ -2710,8 +2710,8 @@ if ($username) {
             text-shadow: 0 0 10px rgba(0,244,255,0.3);
         }
         
-        /* ========== ПРОФИЛЬ (САМОЕ ВАЖНОЕ) ========== */
-        /* Никнейм - ОГРОМНЫЙ БЕЛЫЙ */
+        /* ПРОФИЛЬ */
+        /* Никнейм Белый */
         .user-name, 
         .username,
         .dropdown-username,
@@ -2725,7 +2725,7 @@ if ($username) {
             letter-spacing: 1px !important;
         }
         
-        /* Ранг - ЗОЛОТОЙ С БЛЕСКОМ */
+        /* Ранг */
         .user-rank span,
         .dropdown-rank,
         .user-text .rank,
@@ -2735,7 +2735,7 @@ if ($username) {
             text-shadow: 0 0 10px rgba(255,215,0,0.5) !important;
         }
         
-        /* MMR - НЕОНОВЫЙ */
+        /* MMR */
         .user-mmr, .mmr-value {
             color: #00f4ff !important;
             background: linear-gradient(135deg, rgba(0,244,255,0.2), rgba(0,244,255,0.05));
@@ -2745,7 +2745,7 @@ if ($username) {
             text-shadow: 0 0 8px rgba(0,244,255,0.5);
         }
         
-        /* ========== ВЫПАДАЮЩЕЕ МЕНЮ ========== */
+        /* МЕНЮ */
         .dropdown-menu {
             background: rgba(5, 5, 15, 0.98) !important;
             backdrop-filter: blur(20px);
@@ -2777,7 +2777,7 @@ if ($username) {
             color: #ff2a6d !important;
         }
         
-        /* ========== НАВИГАЦИЯ (МЕНЮ СВЕРХУ) ========== */
+        /* НАВИГАЦИЯ */
         .nav-links a {
             color: #e0e0ff !important;
             font-weight: 600;
@@ -2794,7 +2794,7 @@ if ($username) {
             border-color: #00f4ff;
         }
         
-        /* ========== КАРТОЧКИ И БЛОКИ ========== */
+        /* КАРТОЧКИ И БЛОКИ */
         .stat-card, .guide-card, .news-card, .build-card,
         .meta-card-inner, .pulse-card, .achievement-card,
         .build-pro-card, .guide-card-ultra, .news-card-ultra {
@@ -2809,7 +2809,7 @@ if ($username) {
             text-shadow: 0 0 10px rgba(0,244,255,0.5);
         }
         
-        /* ========== ГЕРОИ ========== */
+        /* ГЕРОИ */
         .hero-name-modern, .hero-name {
             color: #ffffff !important;
             font-weight: 800;
@@ -2821,7 +2821,7 @@ if ($username) {
             font-weight: 700;
         }
         
-        /* ========== СБОРКИ ========== */
+        /* СБОРКИ */
         .build-pro-name, .build-hero-name {
             color: #ffffff !important;
             background: linear-gradient(135deg, #fff, #c0c0ff);
@@ -2835,7 +2835,7 @@ if ($username) {
             color: #00f4ff !important;
         }
         
-        /* ========== НОВОСТИ ========== */
+        /* НОВОСТИ */
         .news-title, .news-meta-title {
             color: #ffffff !important;
             font-weight: 800;
@@ -2849,7 +2849,7 @@ if ($username) {
             color: #00f4ff !important;
         }
         
-        /* ========== ГАЙДЫ ========== */
+        /* ГАЙДЫ */
         .guide-title, .card-title {
             color: #ffffff !important;
         }
@@ -2862,7 +2862,7 @@ if ($username) {
             color: #00f4ff !important;
         }
         
-        /* ========== ИНПУТЫ И ФОРМЫ ========== */
+        /* ФОРМЫ */
         input, textarea, select {
             color: #ffffff !important;
             background: rgba(10, 10, 26, 0.95) !important;
@@ -2878,7 +2878,7 @@ if ($username) {
             box-shadow: 0 0 15px rgba(0,244,255,0.3);
         }
         
-        /* ========== КНОПКИ ========== */
+        /* КНОПКИ */
         .login-btn, .btn-register, .cyber-cta {
             color: #0a0a1a !important;
             font-weight: 800;
@@ -2894,7 +2894,7 @@ if ($username) {
             background: #00f4ff;
         }
         
-        /* ========== ЛОГОТИП ========== */
+        /* ЛОГОТИП */
         .logo, .logo span {
             background: linear-gradient(135deg, #00f4ff, #c084fc, #ff2a6d);
             -webkit-background-clip: text;
@@ -2902,13 +2902,13 @@ if ($username) {
             -webkit-text-fill-color: transparent;
         }
         
-        /* ========== СТАТИСТИКА И ЦИФРЫ ========== */
+        /* СТАТИСТИКА И ЦИФРЫ */
         .stat-cyber-number, .hero-stat-value, .build-pro-stat-value {
             color: #ffffff !important;
             text-shadow: 0 0 15px rgba(0,244,255,0.6);
         }
         
-        /* ========== ДОПОЛНИТЕЛЬНО - ВСЁ БЕЛОЕ ========== */
+        /* ДОПОЛНИТЕЛЬНО */
         .welcome-card p, .hero-stats .hero-stat-label,
         .filter-label, .items-label, .skills-title,
         .news-category, .news-tag {
@@ -2925,7 +2925,7 @@ if ($username) {
             text-shadow: 0 0 8px #00f4ff;
         }
         
-        /* Специально для мобилок - чтоб точно всё видно */
+        /* Мобильная версия */
         @media (max-width: 768px) {
             .user-name, .username, .dropdown-username {
                 font-size: 0.9rem !important;
@@ -2935,7 +2935,7 @@ if ($username) {
             }
         }
         
-        /* ПОСЛЕДНИЙ ШТРИХ - ГАРАНТИЯ БЕЛИЗНЫ */
+        /* Цвет */
         .user-profile .user-text .username,
         .user-profile .user-info .user-name,
         #profileBtn + div .username,
@@ -2972,7 +2972,7 @@ if ($username) {
         <div class="builds-grid-pro" id="buildsGrid"></div>
     </div>
 
-    <!-- ГАЙДЫ  -->
+    <!-- ГАЙДЫ -->
     <div id="guides-page" class="content-section">
         <div class="guides-header">
             <div class="guides-glow"></div>
@@ -2989,7 +2989,7 @@ if ($username) {
         </div>
 
         <div class="guides-grid-ultra">
-            <!-- КАРТОЧКА 1 - НОВИЧОК -->
+            <!-- КАРТОЧКА 1 -->
             <div class="guide-card-ultra" data-level="beginner">
                 <div class="card-border-glow"></div>
                 <div class="card-header">
@@ -3025,7 +3025,7 @@ if ($username) {
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 2 - СРЕДНИЙ -->
+            <!-- КАРТОЧКА 2 -->
             <div class="guide-card-ultra" data-level="intermediate">
                 <div class="card-border-glow"></div>
                 <div class="card-header">
@@ -3061,7 +3061,7 @@ if ($username) {
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 3 - ПРО -->
+            <!-- КАРТОЧКА 3 -->
             <div class="guide-card-ultra" data-level="advanced">
                 <div class="card-border-glow"></div>
                 <div class="card-header">
@@ -3099,7 +3099,7 @@ if ($username) {
         </div>
     </div>
     
-    <!-- НОВОСТИ  -->
+    <!-- НОВОСТИ -->
     <div id="news-page" class="content-section">
         <div class="news-header-ultra">
             <div class="news-header-glow"></div>
@@ -3116,7 +3116,7 @@ if ($username) {
         </div>
 
         <div class="news-grid-ultra">
-            <!-- НОВОСТЬ 1 - ПАТЧ -->
+            <!-- НОВОСТЬ 1 -->
             <div class="news-card-ultra" data-news="patch">
                 <div class="news-card-glow"></div>
                 <div class="news-image-wrapper">
@@ -3152,7 +3152,7 @@ if ($username) {
                 </div>
             </div>
 
-            <!-- НОВОСТЬ 2 - НОВЫЕ ПРЕДМЕТЫ -->
+            <!-- НОВОСТЬ 2 -->
             <div class="news-card-ultra" data-news="items">
                 <div class="news-card-glow"></div>
                 <div class="news-image-wrapper">
@@ -3188,7 +3188,7 @@ if ($username) {
                 </div>
             </div>
 
-            <!-- НОВОСТЬ 3 - ПЕРЕРАБОТКА ГЕРОЯ -->
+            <!-- НОВОСТЬ 3 -->
             <div class="news-card-ultra" data-news="hero">
                 <div class="news-card-glow"></div>
                 <div class="news-image-wrapper">
@@ -3225,7 +3225,7 @@ if ($username) {
             </div>
         </div>
 
-        <!-- ДОПОЛНИТЕЛЬНЫЙ БЛОК - БЫСТРЫЕ НОВОСТИ -->
+        <!-- БЫСТРЫЕ НОВОСТИ -->
         <div class="quick-news">
             <div class="quick-news-header">
                 <i class="fas fa-clock"></i>
@@ -3257,7 +3257,7 @@ if ($username) {
 <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
 
 <script>
-// ========== ФУНКЦИИ ДЛЯ СБОРОК ==========
+// ФУНКЦИИ ДЛЯ СБОРОК
 window.copyBuildProHandler = function(text) {
     navigator.clipboard.writeText(text).then(() => {
         canvasConfetti({ particleCount: 100, spread: 70, origin: { y: 0.7 }, colors: ['#00f4ff', '#c084fc', '#ffd700'] });
@@ -3316,7 +3316,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // === ГЕРОИ ===
+    // Герои
     let allHeroes = [];
     let currentAttrFilter = 'all';
     let currentDiffFilter = 'all';
@@ -3432,7 +3432,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (clearSearchBtn) clearSearchBtn.addEventListener('click', () => { searchInput.value = ''; currentSearch = ''; updateFilters(); });
     if (randomHeroBtn) randomHeroBtn.addEventListener('click', randomHero);
     
-    // Дропдаун
+    // Выпадающий список
     const profileBtn = document.getElementById('profileBtn');
     const dropdownMenu = document.getElementById('dropdownMenu');
     if (profileBtn && dropdownMenu) {
@@ -3440,7 +3440,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('click', function(e) { if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) { dropdownMenu.classList.remove('show'); profileBtn.classList.remove('active'); } });
     }
     
-    // Скролл
+    // Перещение веб-страниц
     const header = document.getElementById('mainHeader');
     const scrollBtn = document.getElementById('scrollTop');
     window.addEventListener('scroll', function() { if (window.scrollY > 50) header.classList.add('scrolled'); else header.classList.remove('scrolled'); if (window.scrollY > 500) scrollBtn.classList.add('visible'); else scrollBtn.classList.remove('visible'); });
@@ -3452,7 +3452,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => { canvasConfetti({ particleCount: 80, spread: 60, origin: { y: 0.6 }, colors: ['#00f4ff', '#c084fc', '#ff2a6d'] }); }, 500);
 });
 
-    // ========== СБОРКИ - ДАННЫЕ И ЛОГИКА ==========
+    // СБОРКИ ДАННЫЕ
     const buildsDataPro = [
         { id: 1, name: "MORPHLING", heroKey: "morphling", player: "YATORO", team: "TEAM SPIRIT", role: "carry", roleName: "КЕРРИ", roleIcon: "fa-sword", winrate: "58.7", pickrate: "42.3", mmr: "11,234", 
           items: ["power_treads", "manta", "butterfly", "satanic", "black_king_bar", "skadi"],
@@ -3719,7 +3719,7 @@ function createMatrixEffect() {
     }, 100);
 }
 
-// Добавь вызов анимации в DOMContentLoaded
+// Добавь вызов анимации в События JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         animateNumbers();
@@ -4169,7 +4169,7 @@ LOGIN-PAGE.PHP
       setTimeout(() => successDiv.remove(), 2000);
     }
 
-    // ============== РЕГИСТРАЦИЯ (РАБОТАЕТ С БД) ==============
+    // РЕГИСТРАЦИЯ
     document.getElementById('registerSubmit').addEventListener('click', async function() {
       const username = document.getElementById('regUsername').value.trim();
       const email = document.getElementById('regEmail').value.trim();
@@ -4226,7 +4226,7 @@ LOGIN-PAGE.PHP
       }
     });
 
-    // ============== ВХОД (РАБОТАЕТ С БД) ==============
+    // ВХОД
     document.getElementById('loginSubmit').addEventListener('click', async function() {
       const username = document.getElementById('loginUsername').value.trim();
       const password = document.getElementById('loginPassword').value;
@@ -4287,7 +4287,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     $confirm_password = $_POST['confirm_password'] ?? '';
     
-    // Валидация
+    // Процесс проверки
     if (empty($username) || empty($email) || empty($password)) {
         $error = 'Заполните все поля!';
     } elseif (strlen($username) < 3) {
@@ -4299,7 +4299,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($password !== $confirm_password) {
         $error = 'Пароли не совпадают';
     } else {
-        // Временная заглушка (без БД)
+        // Временная заглушка
         $_SESSION['temp_user'] = $username;
         $success = 'Регистрация успешна! Перенаправление на страницу входа...';
         echo '<meta http-equiv="refresh" content="2;url=login-page.php">';
@@ -4335,7 +4335,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             overflow-x: hidden;
         }
 
-        /* Анимированный фон с частицами */
+        /* Анимированный фон */
         .particles-bg {
             position: fixed;
             inset: 0;
@@ -4451,7 +4451,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             transform: translateY(-5px);
         }
 
-        /* Кибер-уголки */
+        /* Уголки */
         .corner {
             position: absolute;
             width: 40px;
@@ -4606,7 +4606,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #00f4ff;
         }
 
-        /* Индикатор силы пароля */
+        / Индикатор силы пароля /
         .password-strength {
             margin-top: 8px;
             font-size: 0.7rem;
@@ -4923,7 +4923,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         passwordInput.addEventListener('input', checkPasswordMatch);
         confirmInput.addEventListener('input', checkPasswordMatch);
 
-        // Валидация перед отправкой
+        // Процесс проверки перед отправкой
         const form = document.getElementById('registerForm');
         
         form.addEventListener('submit', function(e) {
@@ -5016,7 +5016,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     $confirm_password = $_POST['confirm_password'] ?? '';
     
-    // Валидация
+    // Процесс Проверки
     if (empty($username) || empty($email) || empty($password)) {
         $error = 'Заполните все поля!';
     } elseif (strlen($username) < 3) {
@@ -5064,7 +5064,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             overflow-x: hidden;
         }
 
-        /* Анимированный фон с частицами */
+        / Анимированный фон с частицами /
         .particles-bg {
             position: fixed;
             inset: 0;
@@ -5652,7 +5652,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         passwordInput.addEventListener('input', checkPasswordMatch);
         confirmInput.addEventListener('input', checkPasswordMatch);
 
-        // Валидация перед отправкой
+        // Процесс проверки перед отправкой
         const form = document.getElementById('registerForm');
         
         form.addEventListener('submit', function(e) {
@@ -5842,7 +5842,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             overflow-x: hidden;
         }
 
-        /* Анимированный фон */
+        / Анимированный фон /
         body::before {
             content: '';
             position: fixed;
@@ -5953,7 +5953,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             box-shadow: 0 30px 80px rgba(0,244,255,0.25);
         }
 
-        /* Кибер-уголки */
+        /* Уголок */
         .corner {
             position: absolute;
             width: 50px;
@@ -6197,7 +6197,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             font-weight: 500;
         }
 
-        /* Прогресс бар */
+        / Прогресс бар /
         .progress-section {
             padding: 0 45px 45px;
         }
@@ -6358,7 +6358,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             }
         }
         
-        /* ========== УЛУЧШЕННЫЕ ШРИФТЫ ========== */
+        /* ШРИФТЫ */
         .stat-value {
             font-size: 2.5rem !important;
             font-weight: 900 !important;
@@ -6386,7 +6386,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             letter-spacing: 1px !important;
         }
         
-        /* ========== НОВЫЕ ЭФФЕКТЫ ========== */
+        /* ЭФФЕКТЫ */
         
         /* Мерцающая рамка */
         @keyframes borderGlow {
@@ -6660,7 +6660,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
         });
     }
     
-    // Счётчик лайков (просто для красоты)
+    // Счётчик лайков
     let likeCount = 0;
     const likeButtons = document.querySelectorAll('.btn-action');
     likeButtons.forEach(btn => {
@@ -6678,7 +6678,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
         });
     });
     
-    // Эффект печатной машинки для никнейма (один раз)
+    // Эффект печатной машинки для никнейма
     const nameElement = document.querySelector('.profile-name');
     if (nameElement && !nameElement.hasAttribute('data-animated')) {
         nameElement.setAttribute('data-animated', 'true');
@@ -6907,7 +6907,7 @@ $avatarLetter = strtoupper(substr($username, 0, 1));
             box-shadow: 0 30px 80px rgba(0,244,255,0.2);
         }
 
-        /* Кибер-уголки */
+        /* Уголки */
         .corner {
             position: absolute;
             width: 40px;
@@ -7815,16 +7815,16 @@ $tower_damage = 1254320;
                 text-align: center;
             }
         }
-                /* ==========  ШРИФТЫ ========== */
+                /* ШРИФТЫ */
         
-        /* Основной текст - яркий и сочный */
+        /* Основной текст */
         body, p, span, div, li, .stat-trend, .match-date, .hero-stat-label {
             color: #ffffff !important;
             font-weight: 500 !important;
             text-shadow: 0 0 5px rgba(0,244,255,0.3) !important;
         }
         
-        /* Заголовки - жирные и с неоном */
+        /* Заголовки */
         h1, h2, h3, h4, .stats-header h1, .chart-title, .section-title,
         .stat-label, .hero-stat-value, .match-kda {
             font-weight: 900 !important;
@@ -7832,7 +7832,7 @@ $tower_damage = 1254320;
             text-transform: uppercase !important;
         }
         
-        /* Значения статистики - ОГРОМНЫЕ */
+        /* Значения статистики */
         .stat-value {
             font-size: 3rem !important;
             font-weight: 900 !important;
@@ -7950,7 +7950,7 @@ $tower_damage = 1254320;
             letter-spacing: 2px !important;
         }
         
-        /* Адаптив для мобилок */
+        /* Адаптив для телефонов */
         @media (max-width: 768px) {
             .stat-value {
                 font-size: 2rem !important;
@@ -8660,7 +8660,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        /* ========== ФИНАЛЬНЫЙ ФИКС ВСЕГО ТЕКСТА ========== */
+        /* Настройка Текста */
         .settings-wrapper *,
         .settings-card *,
         .settings-body *,
@@ -8696,7 +8696,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
         
-        /* ========== УБИРАЕМ ВСЯКИЙ ЛЕВЫЙ ТЕКСТ ========== */
+        /* Текст */
         body, html {
             overflow-x: hidden;
         }
